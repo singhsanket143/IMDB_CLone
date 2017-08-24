@@ -1,0 +1,411 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+
+}
+
+body{
+	text-align: center;
+	width: auto;
+	padding-left: 170px;
+	padding-right: 170px;
+	background-color:#cfd0d1;
+}
+
+header{
+	padding: 5px;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 65px;
+	padding-right: 65px;
+	border-bottom: 0.5px solid black;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 11px #000000;
+}
+a{
+	text-decoration: none;
+}
+.image { 
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+
+.formbar{
+	display: flex;
+	flex-flow: column;
+}
+.barbutton{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.barbutton div{
+	width:100px;
+	height: 40px;
+	padding-right: 19px;
+	color: White;
+	background-color: #333;
+	text-decoration: none;
+	border-left: 2px ;
+	border-top: 0;
+	border-right: 0.8px solid rgba(235, 235, 224,0.5);
+	border-bottom: 0;
+}
+.barbutton div a{
+	color: White;
+	
+}
+.barbutton div a:hover{
+	text-decoration: underline;
+}
+
+.barbutton div:hover{
+	background-color: rgba(214, 214, 194,.3);
+}
+
+
+.barbutton div a p{
+	color: #ffff80;
+}
+
+.face{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+.all{
+	margin-top: 2px;
+	margin-bottom: 12px;
+}
+.all button{
+	height:30px;
+	width: 100px;
+}
+#facebook{
+	margin-top: 2px;
+}
+#facebook button{
+	margin-bottom: 20px;
+	height: 25px;
+	background-color: #3B5998;
+	border-color: #3B5998;
+	border-top-right-radius:4px;
+	border-top-left-radius:4px;
+	color: White;
+	margin-left: 5px;
+	height: 25px;
+	width:50;
+}
+.icon{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.icon .otherlink a{
+	
+	text-decoration: underline;
+	padding-top: 25px;
+}
+.Upper{
+	display: flex;
+	background-color: #333;
+	align-items: flex-start;
+	justify-content: space-around;
+	border-bottom: 0.5px solid rgba(255,255,255, .2);
+	box-shadow: 0px 0px 11px #000000;
+
+}
+.Upper a img{
+	
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 8px;
+	height:60px;
+	width:120px;
+}
+.Upper > button:hover{
+	background-color:#e0e055; /* Green */
+
+}
+.Upper div{
+	display: flex;
+	justify-content: center;
+	
+	# background-color: Black;
+}
+.Upper div form input{
+	width: 100%;
+	padding: 2.5px 100px;
+	margin: 8px 0;
+	height: 35px;
+	#margin-left: 10px;
+	box-shadow: 0px 0px 11px #000000;
+	box-sizing: border-box;
+
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 8px;
+
+}
+.dropdown button{
+	padding-right: 50px;
+	color: Black;
+	padding-left: 5px;
+	height: 27px;
+	font-size: 17px;
+}
+.dropdown:after{
+	content: "\25BC"
+	font-size: .5em;
+	display: block;
+	position: absolute;;
+	top: 38%;
+	right: 12%;
+}
+.dropdown-menu{
+	display:inline-block;
+	text-align:left;
+
+}
+.dropdown .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
+	background-color: #e6ecf7;
+	font-size: 15px;
+	list-style: none; /** Remove list bullets */
+	width :150%;
+	padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+
+}
+#magnifying{
+	background-color: Yellow;
+	font-size: 20px;
+	margin-top: 8px;
+	height: 27px;
+	margin-bottom: 55px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+.imdbpro{
+	margin-top: 10px;
+	height: 20px;
+	width: 70px;
+}
+.social{
+	margin-top: 10px;
+	height: 15px;
+	width: 20px;
+}
+
+
+.left{
+	float: left;
+	display: flex;
+	background-color: #333;
+	justify-content: space-between;
+
+	align-self: flex-start;
+	align-content: center;
+	flex-flow: column;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 8px;
+	box-shadow: 0px 0px 11px #000000;
+}
+.right{
+
+	display: flex;
+	flex-flow: column;
+	background-color: #ced4dd;
+	padding-right: 25px;
+	padding-top: 15px;
+	padding-left: 50px;
+	box-shadow: 0px 0px 11px #000000;
+}
+
+.left .white{
+	background-color: #f2f5f9;
+	margin-left: -20px;
+	margin-right: -20px;
+	
+}
+
+.left .white h1{
+	font-weight: normal;
+	text-align: left;
+	align-items: left;
+	display: block;
+	margin-left: 16px;
+
+}
+
+.left .white h1 p{
+	color: Black;
+}
+.left .white h1 p:hover{
+	color: Blue;
+}
+.left .white h1:hover{
+	text-decoration: underline;
+	
+	
+}
+
+.left .white > a:hover {
+	text-decoration: underline;
+	
+}
+
+.first{
+	background-color: White;
+}
+
+.left .white > a{
+	text-align: left;
+	align-items: left;
+	display: block;
+	margin-left: 16px;
+}
+
+.write{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 70px;
+	margin-right: 100px;
+}
+.write1{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+.write2{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px;
+	margin-right: 40px;
+}
+.sidebar1{
+	display: block;
+	text-align: left;
+	align-items: left;
+	display: block;
+	margin-right: 100px;
+}
+.righttable{
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	background-color: #333;
+
+}
+.righttable div{
+	color: White;
+	font-weight: none;
+	font-size: 25px;
+	text-align: left;
+
+}
+.righttable div h5{
+	font-size: 15px;
+}
+#percent{
+	text-align: right;
+	font-size: 10px;
+}
+.temp{
+	display: flex;;
+	flex-flow: column;
+	justify-content: space-between;
+
+}
+.temp div{
+	margin-bottom: 5px;
+	background-color:#232121;
+}
+.intemp{
+	display: flex;
+	justify-content: space-between;
+}
+.rightb a:hover{
+	text-decoration: underline;
+}
+footer {
+	background-color: #cfd0d1;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 360px;
+	width: 100%;
+	margin-top: 3750px;
+	box-shadow: 0px 0px 11px #000000;
+
+}
+.f1{
+	display: flex;
+	justify-content: space-between;
+}
+.f2{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	
+}
+.f2 div{
+	border-left: 1px solid #9da1a5;
+}
+.box1{
+	flex: 2;
+}
+.box1 > p{
+	text-align: left;
+	margin-left: 17px;
+	font-size: 25px;
+}
+.box1 .box11{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	height: 30px;
+	margin-top: 15px;
+}
+.box2{
+	flex: 1;
+}
+.box3{
+	flex: 2;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+
+}
+.f2 .box3 .footlist li{
+	list-style: none;
+	
+	text-align: left;
+}
+.footlist li:hover{
+	text-decoration: underline;
+}
+.edit{
+	text-align: left;
+
+}
